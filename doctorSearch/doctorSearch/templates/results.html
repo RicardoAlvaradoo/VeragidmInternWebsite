@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <b>Doctors Found</b>
+<body>
+    {% if test != None %}
+
+
+
+
+    {% for i in test %}
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Specialty</th>
+          <th>Area</th>
+          <th>Review Score</th>
+        </tr>
+        <tr>
+          <td>{{i.name}}</td>
+          <td>{{i.specialty}}</td>
+          <td>{{i.area}}</td>
+          <td>{{i.reviewScore}}</td>
+        </tr>
+        
+      </table>
+
+   
+    {% endfor %}
+   
+    {% else %}
+
+   <header>No Doctors Found, Try again</header>
+ 
+   {% endif %}
+</body>
+<body>
+<header>Similar Doctors</header>
+{% if sim != None%}
+
+
+
+
+{% for j in sim %}
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Specialty</th>
+          <th>Area</th>
+          <th>Review Score</th>
+        </tr>
+        <tr>
+          <td>{{j.name}}</td>
+          <td>{{j.specialty}}</td>
+          <td>{{j.area}}</td>
+          <td>{{j.reviewScore}}</td>
+        </tr>
+        
+      </table>
+
+   
+    {% endfor %}
+    {% else %}
+    
+    <header>No Similar Doctors Found, Try again</header>
+ 
+    {% endif %}
+</body>
+</html>

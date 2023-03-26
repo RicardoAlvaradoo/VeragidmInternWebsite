@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hello World!</h1>
+<form action="{% url 'doctor' %}" method="post">
+    {% csrf_token %}
+    <input name="name" type="text" placeholder="Name...">
+    <input name="area" type="text" placeholder="Area...">
+    <input name="specialty" type="text" placeholder="Specialty...">
+    <input name="reviewscore" type="text" placeholder="Review Score...">
+    <input type="submit" value="Submit">
+    
+  </form>
+
+</body>
+</html>
