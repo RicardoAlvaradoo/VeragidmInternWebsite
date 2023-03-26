@@ -70,7 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'doctorSearch.wsgi.application'
 
-
+ALLOWED_HOSTS = ["infinite-earth-16515.herokuapp.com, http://127.0.0.1:8000/doctors/"]
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
